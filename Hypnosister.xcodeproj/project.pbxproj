@@ -14,6 +14,7 @@
 		EA21026F1B1E47E6003C1E48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA21026E1B1E47E6003C1E48 /* Images.xcassets */; };
 		EA2102721B1E47E6003C1E48 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2102701B1E47E6003C1E48 /* LaunchScreen.xib */; };
 		EA21027E1B1E47E6003C1E48 /* HypnosisterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA21027D1B1E47E6003C1E48 /* HypnosisterTests.m */; };
+		EA2102891B1E4D22003C1E48 /* HypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2102881B1E4D22003C1E48 /* HypnosisView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		EA2102771B1E47E6003C1E48 /* HypnosisterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HypnosisterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA21027C1B1E47E6003C1E48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA21027D1B1E47E6003C1E48 /* HypnosisterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnosisterTests.m; sourceTree = "<group>"; };
+		EA2102871B1E4D22003C1E48 /* HypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HypnosisView.h; sourceTree = "<group>"; };
+		EA2102881B1E4D22003C1E48 /* HypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypnosisView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				EA2102681B1E47E6003C1E48 /* ViewController.h */,
 				EA2102691B1E47E6003C1E48 /* ViewController.m */,
 				EA21026B1B1E47E6003C1E48 /* Main.storyboard */,
+				EA2102871B1E4D22003C1E48 /* HypnosisView.h */,
+				EA2102881B1E4D22003C1E48 /* HypnosisView.m */,
 				EA21026E1B1E47E6003C1E48 /* Images.xcassets */,
 				EA2102701B1E47E6003C1E48 /* LaunchScreen.xib */,
 				EA2102611B1E47E6003C1E48 /* Supporting Files */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA21026A1B1E47E6003C1E48 /* ViewController.m in Sources */,
+				EA2102891B1E4D22003C1E48 /* HypnosisView.m in Sources */,
 				EA2102671B1E47E6003C1E48 /* AppDelegate.m in Sources */,
 				EA2102641B1E47E6003C1E48 /* main.m in Sources */,
 			);
@@ -349,9 +355,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Hypnosister/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -359,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Hypnosister/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HypnosisView.h
 //  Hypnosister
 //
 //  Created by Sander Peerna on 6/2/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-@property (nonatomic, weak) IBOutlet UIScrollView *scrollView;
+@interface HypnosisView : UIView
 
 @end

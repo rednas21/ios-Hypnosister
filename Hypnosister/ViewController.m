@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HypnosisView.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.scrollView.frame = self.view.frame;
+
+    CGRect frame = self.scrollView.frame;
+    HypnosisView *hypnosisView = [[HypnosisView alloc] initWithFrame:frame];
+    [self.scrollView addSubview:hypnosisView];
+    
+    //    CGRect secondFrame = CGRectMake(40, 120, 50, 50);
+    //    HypnosisView *secondView = [[HypnosisView alloc] initWithFrame: secondFrame];
+    //    secondView.backgroundColor = [UIColor blueColor];
+    //    [firstView addSubview: secondView];
 }
 
 - (void)didReceiveMemoryWarning {

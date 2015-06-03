@@ -23,10 +23,10 @@
     HypnosisView *hypnosisView = [[HypnosisView alloc] initWithFrame:frame];
     [self.scrollView addSubview:hypnosisView];
     
-    //    CGRect secondFrame = CGRectMake(40, 120, 50, 50);
-    //    HypnosisView *secondView = [[HypnosisView alloc] initWithFrame: secondFrame];
-    //    secondView.backgroundColor = [UIColor blueColor];
-    //    [firstView addSubview: secondView];
+    HypnosisView *anotherHypnosisView = [[HypnosisView alloc] initWithFrame:CGRectMake(frame.origin.x+frame.size.width, 0, frame.size.width, frame.size.height)];
+    [self.scrollView addSubview:anotherHypnosisView];
+    
+    self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width*2, self.scrollView.frame.size.height);
 }
 
 - (void)didReceiveMemoryWarning {
